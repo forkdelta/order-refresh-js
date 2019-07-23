@@ -38,8 +38,9 @@ def main():
     response = r.json()
 
     print(response)
-    print("Sent", len(order_keys), "orders, got back ", len(response.keys()),
-          "orders")
+    print("Update block timestamped", response["blockNumber"])
+    print("Sent", len(order_keys), "orders, got back",
+          len(response["orders"].keys()), "orders")
 
 
 if __name__ == "__main__":

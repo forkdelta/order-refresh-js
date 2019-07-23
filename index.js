@@ -67,7 +67,8 @@ module.exports = async (req, res) => {
     )
   ).then(subcallResults => assign({}, ...subcallResults));
 
-  const retval = Object.fromEntries(
+  const { blockNumber } = results;
+  const returnOrders = Object.fromEntries(
     orderKeys.map(key => [
       key,
       {
@@ -77,5 +78,8 @@ module.exports = async (req, res) => {
     ])
   );
 
-  send(res, 200, retval);
+  send(res, 200, {
+    blockNumber,
+    orders: returnOrders
+  });
 };
