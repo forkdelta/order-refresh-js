@@ -1,0 +1,21 @@
+{
+  "name": "@forkdelta/order-refresh-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@makerdao/multicall": "github:makerdao/multicall.js#8eac1a0",
+    "debug": "^4.1.1",
+    "invariant": "^2.2.4",
+    "lodash": "^4.17.15",
+    "micro": "^9.3.4"
+  },
+  "devDependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "micro-dev": "^3.0.0"
+  },
+  "scripts": {
+    "start": "micro"
+  },
+  "license": "ISC"
+}
