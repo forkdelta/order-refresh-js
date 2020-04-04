@@ -9,7 +9,7 @@
     "invariant": "^2.2.4",
     "lodash": "^4.17.15",
     "micro": "^9.3.4",
-    "promise.allsettled": "^1.0.1"
+    "promise.allsettled": "^1.0.2"
   },
   "devDependencies": {
     "isomorphic-unfetch": "^3.0.0",
