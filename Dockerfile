@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM node:13-alpine
 
 RUN apk add --update --upgrade --no-cache git # Need this while we have git-based npm deps
 
